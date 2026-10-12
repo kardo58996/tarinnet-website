@@ -1069,7 +1069,34 @@ a.btn:hover {
     background: #e60000 !important;
     color: #ffffff !important;
 }
+/* TARINNET SOCIAL MEDIA */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
 
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 13px;
+    border: 1px solid #e60000;
+    border-radius: 8px;
+    color: #ffffff !important;
+    background: #b30000;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.social-links a:hover {
+    background: #e60000;
+    border-color: #e60000;
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px #e6000040;
+}
 
 </style>
 </head>
@@ -1921,12 +1948,23 @@ coverageForm.addEventListener("submit", function (event) {
                 <a href="#contact">Support</a>
             </div>
 
-            <div>
-                <h3>Contact Us</h3>
-                <p>+964 750 427 0044</p>
-                <p>noc@tarinnet.info</p>
-                <p>Duhok, Kurdistan Region</p>
-            </div>
+           <div>
+    <h3>Contact Us</h3>
+    <p>+964 750 427 0044</p>
+    <p>noc@tarinnet.info</p>
+    <p>Duhok, Kurdistan Region</p>
+</div>
+
+<div>
+    <h3>Follow TarinNet</h3>
+    <p>Connect with us on social media.</p>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/tarinnetcompany/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/tarinnetcompany/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://wa.me/9647511363044" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+</div>
         </div>
 
         <div class="footer-bottom">
@@ -1939,7 +1977,7 @@ coverageForm.addEventListener("submit", function (event) {
 <a
     class="whatsapp"
     id="whatsappButton"
-    href="https://wa.me/9647504276305"
+    href="https://wa.me/9647511363044"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Contact TarinNet on WhatsApp"
@@ -1958,7 +1996,7 @@ coverageForm.addEventListener("submit", function (event) {
   Replace this with your official WhatsApp number.
   Use digits only: country code + phone number.
 */
-const WHATSAPP_NUMBER = "9647504276305";
+const WHATSAPP_NUMBER = "9647511363044";
 
 const menuToggle = document.getElementById("menuToggle");
 const navigation = document.getElementById("navigation");
