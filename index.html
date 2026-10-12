@@ -1,0 +1,2141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TarinNet | Wireless Internet Iraq</title>
+<meta name="description" content="TarinNet wireless internet services in Duhok, Akre, Hewler and Soran. Explore internet packages and request installation.">
+<meta name="theme-color" content="#050d1a">
+
+<style>
+
+:root {
+    --bg: #050d1a;
+    --bg-soft: #091629;
+    --card: #0c1b30;
+    --card-hover: #102540;
+    --blue: #0788ff;
+    --cyan: #00d5ff;
+    --orange: #ff9200;
+    --text: #f4f8ff;
+    --muted: #9aabc3;
+    --border: #1c3554;
+    --green: #20c779;
+    --radius: 16px;
+    --shadow: 0 15px 45px #0005;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+}
+
+body, input, select, textarea, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select, textarea {
+    font-size: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus-visible, a:focus-visible,
+input:focus-visible, select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 4px;
+}
+
+.container {
+    width: min(1160px, 92%);
+    margin: auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-alt {
+    background: var(--bg-soft);
+    border-top: 1px solid #14263e;
+    border-bottom: 1px solid #14263e;
+}
+
+.eyebrow {
+    color: var(--cyan);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.section-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid var(--blue);
+    border-radius: 9px;
+    padding: 12px 21px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--blue), #005bdb);
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px #0788ff35;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--cyan);
+    border-color: #0788ff;
+}
+
+.btn-outline:hover {
+    background: #0788ff18;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #050d1af2;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    position: relative;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    color: var(--cyan);
+    font-size: 34px;
+}
+
+.logo-name span {
+    color: var(--cyan);
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+nav a {
+    color: #d5dfed;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: var(--cyan);
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 27px;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 82% 30%, #006bca30, transparent 42%),
+        linear-gradient(120deg, #050d1a, #08172a 60%, #050d1a);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 35px;
+    min-height: 530px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.hero h1 {
+    font-size: clamp(43px, 6vw, 70px);
+    letter-spacing: -3px;
+    line-height: 1.04;
+    margin: 17px 0;
+}
+
+.hero h1 span {
+    color: var(--cyan);
+    background: linear-gradient(90deg, var(--cyan), #1685ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-copy {
+    color: var(--muted);
+    max-width: 530px;
+    margin-bottom: 27px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-note {
+    color: var(--muted);
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.hero-visual {
+    min-height: 365px;
+    border: 1px solid #164a78;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 50% 45%, #008bff3b, transparent 45%),
+        linear-gradient(145deg, #102b49, #061020);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-visual::before,
+.hero-visual::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px solid #00cfff50;
+    border-radius: 50%;
+    box-shadow: 0 0 45px #0088ff16;
+}
+
+.hero-visual::after {
+    width: 320px;
+    height: 320px;
+}
+
+.signal-rings {
+    position: absolute;
+    font-size: 200px;
+    color: #00cfff30;
+}
+
+.antenna-card {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 28px;
+    width: min(300px, 82%);
+    background: #081629e8;
+    border: 1px solid #245078;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.antenna-icon {
+    font-size: 90px;
+    line-height: 1.3;
+    filter: drop-shadow(0 0 15px #00bfff55);
+}
+
+.antenna-card h3 {
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.antenna-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.hero-badge {
+    position: absolute;
+    z-index: 3;
+    background: #102540;
+    border: 1px solid #245078;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-one {
+    top: 24px;
+    left: 18px;
+}
+
+.badge-two {
+    right: 18px;
+    bottom: 24px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.feature {
+    padding: 23px 13px;
+    text-align: center;
+    background: var(--card);
+    border: 1px solid #142c47;
+    border-radius: 13px;
+    transition: .2s;
+}
+
+.feature:hover {
+    border-color: var(--blue);
+    transform: translateY(-3px);
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 9px;
+}
+
+.feature h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.feature p {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.plan {
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: .25s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue);
+    box-shadow: var(--shadow);
+}
+
+.plan.popular {
+    border: 2px solid var(--blue);
+}
+
+.popular-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--blue);
+    color: white;
+    padding: 5px 11px;
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 0 0 0 9px;
+}
+
+.plan-head {
+    padding: 21px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(130deg, #102a48, #0b1a2d);
+}
+
+.plan-head h3 {
+    font-size: 20px;
+}
+
+.plan-body {
+    padding: 22px;
+}
+
+.price {
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -.8px;
+}
+
+.price small {
+    display: block;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: normal;
+    letter-spacing: 0;
+    margin-top: 7px;
+}
+
+.plan-speed {
+    margin: 19px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.plan-speed strong {
+    color: var(--cyan);
+}
+
+.plan ul {
+    list-style: none;
+    margin: 20px 0;
+    min-height: 120px;
+}
+
+.plan li {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #c6d2e2;
+}
+
+.plan li::before {
+    content: "✓";
+    color: var(--cyan);
+    font-weight: 900;
+    margin-right: 9px;
+}
+
+.plan .btn {
+    width: 100%;
+    padding: 11px 8px;
+    font-size: 13px;
+}
+
+.disclaimer {
+    color: var(--muted);
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: .2s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--cyan);
+}
+
+.service-icon {
+    font-size: 37px;
+    margin-bottom: 12px;
+}
+
+.service-card h3 {
+    margin-bottom: 9px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.coverage-grid,
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.coverage-grid h2,
+.about-copy h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.coverage-grid > div:first-child > p,
+.about-copy p {
+    color: var(--muted);
+    margin: 14px 0 20px;
+}
+
+.coverage-form {
+    display: flex;
+    gap: 10px;
+}
+
+.coverage-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    background: #081629;
+    color: white;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+}
+
+.coverage-visual,
+.about-visual {
+    background:
+        radial-gradient(circle at 50% 30%, #0788ff2b, transparent 55%),
+        linear-gradient(145deg, #102744, #081324);
+    border: 1px solid #1d4268;
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.coverage-visual .tower,
+.about-visual .tower {
+    font-size: 90px;
+    filter: drop-shadow(0 0 20px #008bff40);
+}
+
+.coverage-visual h3,
+.about-visual h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.coverage-visual p,
+.about-visual p {
+    color: var(--muted);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 27px;
+}
+
+.stat strong {
+    display: block;
+    color: var(--cyan);
+    font-size: 17px;
+}
+
+
+.stat span {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.about-visual {
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-copy ul {
+    list-style: none;
+    margin: 22px 0;
+}
+
+.about-copy li {
+    margin: 10px 0;
+}
+
+.about-copy li::before {
+    content: "✓ ";
+    color: var(--cyan);
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 25px;
+}
+
+.contact-info,
+.contact-form {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px;
+}
+
+.contact-info {
+    background: linear-gradient(145deg, #102640, #091629);
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #cbd7e7;
+    margin: 18px 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-info .small-note {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.contact-form {
+    background: var(--card);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background: #071325;
+    border: 1px solid #25405e;
+    border-radius: 8px;
+}
+
+.form-group select option {
+    background: #071325;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #8294ad;
+}
+
+.form-group textarea {
+    min-height: 115px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+}
+
+footer {
+    background: #030914;
+    border-top: 1px solid var(--border);
+    padding: 45px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 35px;
+}
+
+footer h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+footer p,
+footer a {
+    color: var(--muted);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+footer a {
+    display: block;
+    margin: 9px 0;
+}
+
+footer a:hover {
+    color: var(--cyan);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 900;
+    background: #16ad68;
+    color: white;
+    border: 1px solid #39dc91;
+    border-radius: 40px;
+    padding: 12px 18px;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 5px 25px #0006;
+}
+
+.whatsapp:hover {
+    background: #118b52;
+}
+
+.notice {
+    position: fixed;
+    left: 50%;
+    bottom: 85px;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 90%;
+    background: #12263d;
+    color: white;
+    border: 1px solid #275278;
+    padding: 13px 18px;
+    border-radius: 9px;
+    z-index: 2000;
+    display: none;
+    font-size: 14px;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 1000px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        min-height: 68px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar > .nav-cta {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: -4.35%;
+        width: 108.7%;
+        padding: 22px 5%;
+        background: #071325;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 19px;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero-grid,
+    .coverage-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-grid {
+        padding-top: 48px;
+    }
+
+    .hero-visual {
+        min-height: 310px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 58px 0;
+    }
+
+    .coverage-form {
+        flex-direction: column;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .whatsapp {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+@media (max-width: 430px) {
+    .plans-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+.logo-image {
+    height: 65px;
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Force TarinNet red button backgrounds */
+.btn,
+a.btn,
+button,
+button.btn,
+input[type="submit"],
+.btn-primary,
+.btn-secondary,
+.hero .btn,
+.hero-buttons .btn {
+    background: #b91c1c !important;
+    background-color: #b91c1c !important;
+    color: #ffffff !important;
+    border-color: #b91c1c !important;
+}
+
+/* Darker red when hovering */
+.btn:hover,
+a.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+    background: #991b1b !important;
+    background-color: #991b1b !important;
+    color: #ffffff !important;
+    border-color: #991b1b !important;
+	
+}
+
+/* ==================================
+   TARINNET RED THEME - COLOR OVERRIDE
+   ================================== */
+
+:root {
+    --primary: #e60000 !important;
+    --primary-color: #e60000 !important;
+    --secondary: #e60000 !important;
+    --accent: #e60000 !important;
+    --accent-color: #e60000 !important;
+    --blue: #e60000 !important;
+    --light-blue: #e60000 !important;
+    --cyan: #e60000 !important;
+    --neon-blue: #e60000 !important;
+    --glow-color: #e60000 !important;
+}
+
+/* All common blue text and links */
+a,
+a:visited,
+a:hover,
+a:focus,
+h1 span,
+h2 span,
+h3 span,
+p span,
+.nav-link,
+.navbar a,
+.logo-name span,
+.stat-number,
+.feature-title,
+.section-title span,
+.hero-title span,
+.highlight,
+.gradient-text,
+.text-blue,
+.text-cyan {
+    color: #e60000 !important;
+}
+
+/* Remove blue hover borders and glow */
+button:hover,
+a:hover,
+.btn:hover,
+.card:hover,
+.feature-card:hover,
+.plan-card:hover,
+.pricing-card:hover,
+input:hover,
+select:hover,
+textarea:hover,
+nav a:hover,
+.nav-link:hover {
+    border-color: #e60000 !important;
+    outline-color: #e60000 !important;
+    box-shadow: 0 0 12px rgba(230, 0, 0, 0.25) !important;
+}
+
+/* Focused and selected elements */
+*:focus,
+*:focus-visible,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: #e60000 !important;
+    border-color: #e60000 !important;
+    --tw-ring-color: #e60000 !important;
+}
+
+/* All website buttons */
+button,
+.btn,
+.button,
+.btn-primary,
+.btn-secondary,
+.cta-button,
+a.button,
+a.btn {
+    background: #e60000 !important;
+    border-color: #e60000 !important;
+    color: #ffffff !important;
+}
+
+/* Button hover */
+button:hover,
+.btn:hover,
+.button:hover,
+.cta-button:hover,
+a.btn:hover {
+    background: #b30000 !important;
+    border-color: #b30000 !important;
+    color: #ffffff !important;
+}
+
+/* Common icon accents */
+.icon,
+.feature-icon {
+    color: #e60000 !important;
+}
+
+/* Text selection */
+::selection {
+    background: #e60000 !important;
+    color: #ffffff !important;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        
+     
+     <a class="logo" href="#home" aria-label="TarinNet homepage">
+         <img src="logo.png.png"
+         alt="TarinNet Wireless Internet"
+         class="logo-image">
+     </a>
+
+
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navigation">
+            ☰
+        </button>
+
+        <nav id="navigation">
+          <a href="#home">Home</a>
+          <a href="#plans">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#coverage">Coverage</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+		  <a href="#fttg">FTTG</a>
+        </nav>
+
+        <a href="#contact" class="btn nav-cta">Get Connected →</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-grid">
+        <div>
+            <div class="eyebrow">Fast · Reliable · Wireless</div>
+
+            <h1>
+                TarinNet<br>
+                <span>Wireless ISP</span>
+            </h1>
+
+            <p class="hero-copy">
+                Wireless internet for your home, gaming, streaming
+                and business. Choose a package and contact our team
+                to request your connection.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#coverage" class="btn">Check Availability →</a>
+                <a href="#plans" class="btn btn-outline">View Packages</a>
+            </div>
+
+            <p class="hero-note">
+                ⚡ Internet packages · 📡 Wireless network · 🛠️ Technical support
+            </p>
+        </div>
+
+        <div class="hero-visual">
+            <div class="signal-rings">◉</div>
+            <div class="hero-badge badge-one">⚡ Wireless connectivity</div>
+
+            <div class="antenna-card">
+                <div class="antenna-icon">📡</div>
+                <h3>Stay Connected</h3>
+                <p>Internet for what matters to you.</p>
+            </div>
+
+            <div class="hero-badge badge-two">◉ TarinNet Network</div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<div class="container">
+    <section class="features" aria-label="Our advantages">
+        <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Internet</h3>
+            <p>Packages for everyday use.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🛡️</div>
+            <h3>Reliable Service</h3>
+            <p>Connectivity for home and work.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📡</div>
+            <h3>Wireless Network</h3>
+            <p>Wireless internet solutions.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎧</div>
+            <h3>Local Support</h3>
+            <p>Request help from our team.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🏢</div>
+            <h3>Business Internet</h3>
+            <p>Connectivity for workplaces.</p>
+        </div>
+    </section>
+</div>
+
+<!-- PACKAGES -->
+<section class="section section-alt" id="plans">
+    <div class="container">
+        <div class="section-heading">
+            <div class="eyebrow">Our packages</div>
+            <h2>Choose Your Internet Plan</h2>
+            <p>
+                Find a package that suits your needs.
+                Prices are displayed in Iraqi dinars.
+            </p>
+        </div>
+
+        <div class="plans-grid">
+
+            <article class="plan">
+                <div class="plan-head">
+                    <h3>Normal</h3>
+                </div>
+                <div class="plan-body">
+                    <div class="price">
+                        20,000 IQD
+                        <small>per month</small>
+                    </div>
+
+                    <p class="plan-speed">Up to <strong>13 Mbps</strong></p>
+
+                    <ul>
+                        <li>Browsing and messaging</li>
+                        <li>Social media</li>
+                        <li>Everyday internet use</li>
+                        <li>Support requests</li>
+                    </ul>
+
+                    <button type="button" class="btn"
+                       onclick="document.getElementById('selectedPlan').value='Normal - 20,000 IQD/month'; document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+                       Request Package →
+                   </button>
+                </div>
+            </article>
+
+            <article class="plan popular">
+                <span class="popular-label">POPULAR</span>
+                <div class="plan-head">
+                    <h3>Family</h3>
+                </div>
+                <div class="plan-body">
+                    <div class="price">
+                        25,000 IQD
+                        <small>per month</small>
+                    </div>
+
+                    <p class="plan-speed">Up to <strong>13 Mbps</strong></p>
+
+                    <ul>
+                        <li>Streaming and browsing</li>
+                        <li>Multiple devices</li>
+                        <li>+18 site blocking</li>
+                        <li>Support requests</li>
+                    </ul>
+
+                    <button type="button" class="btn"
+                         onclick="document.getElementById('selectedPlan').value='Family - 25,000 IQD/month'; document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+                         Request Package →
+                     </button>
+                </div>
+            </article>
+
+            <article class="plan">
+                <div class="plan-head">
+                    <h3>Premium</h3>
+                </div>
+                <div class="plan-body">
+                    <div class="price">
+                        28,000 IQD
+                        <small>per month</small>
+                    </div>
+
+                    <p class="plan-speed">Up to <strong>16 Mbps</strong></p>
+
+                    <ul>
+                        <li>High-demand browsing</li>
+                        <li>Streaming and gaming</li>
+                        <li>Multiple devices</li>
+                        <li>Support requests</li>
+                    </ul>
+
+                    <button type="button" class="btn"
+                       onclick="document.getElementById('selectedPlan').value='Premium - 28,000 IQD/month'; document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+                       Request Package →
+                    </button>
+                </div>
+            </article>
+
+            <article class="plan">
+                <div class="plan-head">
+                    <h3>Super</h3>
+                </div>
+                <div class="plan-body">
+                    <div class="price">
+                        42,000 IQD
+                        <small>per month</small>
+                    </div>
+
+                    <p class="plan-speed">Up to <strong>21 Mbps</strong></p>
+
+                    <ul>
+                        <li>Office connectivity</li>
+                        <li>Multiple workstations</li>
+                        <li>Business use</li>
+                        <li>Custom service requests</li>
+                    </ul>
+
+                    <button type="button" class="btn"
+                        onclick="document.getElementById('selectedPlan').value='Super - 42,000 IQD/month'; document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+                        Request Package →
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="disclaimer">
+            90-day packages is also be available. Contact us for details.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-heading">
+            <div class="eyebrow">What we offer</div>
+            <h2>Wireless Internet Solutions</h2>
+            <p>Network services for home users and businesses.</p>
+        </div>
+
+        <div class="services-grid">
+            <article class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Home Internet</h3>
+                <p>Request wireless internet for your home or apartment.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Business Connectivity</h3>
+                <p>Internet options for offices, shops and workplaces.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">📡</div>
+                <h3>Antenna Installation</h3>
+                <p>Request outdoor antenna installation and signal alignment.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">📶</div>
+                <h3>Wi-Fi Setup</h3>
+                <p>Router configuration and local wireless network setup.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Technical Support</h3>
+                <p>Get help with connection issues, routers and signal problems.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Package Renewal</h3>
+                <p>Ask about renewing, changing or upgrading your package.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- FTTG - FIBER TO THE GOVERNMENT -->
+<section class="section section-alt" id="fttg">
+    <div class="container fttg-layout">
+
+        <!-- LEFT SIDE: FTTG CONTENT -->
+        <div class="fttg-content">
+            <div class="eyebrow">TarinNet FTTG Solutions</div>
+            <h2>Fiber to the Government</h2>
+
+            <p>
+                Due to the reliability of its services, TarinNet has gained Kurdistan Regional Government’s trust. Therefore,
+				the two reached an agreement in 2006 to provide internet services to all governmental offices and 
+				institutions in Erbil, Duhok, Kirkuk, and Halabja governorates in addition to the districts and
+				sub-districts in those provinces. This remarkable project was achieved through a systematic and
+				gradual process and in coordination with the Ministry of Transport and Communication. 
+				In 2006, we initiated the first phase of the project under the oversight of the Ministry of Transport and
+				Communication whereby we established a wireless network covering 11 towns and cities in Kurdistan through 
+				which we provided internet services to 350 governmental offices and institutions.
+            </p>
+
+            <div class="fttg-services">
+
+                <article class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Government Connectivity</h3>
+                    <p>
+                        Fiber connectivity options for government
+                        departments and public institutions.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Fiber Network Solutions</h3>
+                    <p>
+                        Network solutions for offices and institutional
+                        connectivity requirements.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Installation & Support</h3>
+                    <p>
+                        Contact our team about site assessments,
+                        installation and technical support.
+                    </p>
+                </article>
+
+            </div>
+
+            
+        </div>
+
+        <!-- RIGHT SIDE: KURDISTAN REGIONAL GOVERNMENT LOGO -->
+        <div class="fttg-logo-panel">
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kurdistan_Regional_Government_Logo.png"
+                alt="Kurdistan Regional Government emblem"
+                class="fttg-logo"
+                loading="lazy"
+            >
+
+            <h3>Kurdistan Regional Government</h3>
+            <p>Fiber connectivity for government institutions</p>
+        </div>
+
+    </div>
+</section>
+<!-- END FTTG SECTION -->
+
+<style>
+/* FTTG two-column layout */
+.fttg-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.fttg-content h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.fttg-content > p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.fttg-services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.fttg-services .service-card {
+    padding: 20px;
+}
+
+.fttg-button {
+    margin-top: 24px;
+}
+
+/* Government logo panel */
+.fttg-logo-panel {
+    min-width: 0;
+    min-height: 390px;
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 35%, #ffffff12, transparent 60%),
+        linear-gradient(145deg, #102744, #081324);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+.fttg-logo {
+    display: block;
+    width: 100%;
+    max-width: 290px;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.fttg-logo-panel h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.fttg-logo-panel p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .fttg-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .fttg-logo-panel {
+        min-height: 300px;
+    }
+
+    .fttg-logo {
+        max-width: 230px;
+        max-height: 240px;
+    }
+}
+</style>
+
+<!-- COVERAGE -->
+
+<!-- TARINNET COVERAGE CHECKER -->
+<section class="section section-alt" id="coverage">
+    <div class="container coverage-grid">
+        <div>
+            <div class="eyebrow">Coverage checker</div>
+            <h2>Is TarinNet Available in Your Area?</h2>
+
+            <p>
+                Enter your city or neighborhood to check our
+                coverage list instantly. Actual signal availability
+                depends on your location and wireless equipment.
+            </p>
+
+            <form class="coverage-form" id="coverageForm">
+                <input
+                    id="coverageAddress"
+                    type="text"
+                    placeholder="Enter city or neighborhood"
+                    aria-label="City or neighborhood"
+                    required
+                    maxlength="150"
+                >
+
+                <button class="btn" type="submit">
+                    Check Coverage →
+                </button>
+            </form>
+
+            <div id="coverageResult"
+                 class="coverage-result"
+                 role="status"
+                 aria-live="polite"
+                 hidden>
+            </div>
+        </div>
+
+        <div class="coverage-visual">
+            <div class="tower">📡</div>
+            <h3>Wireless Coverage</h3>
+            <p>Check whether your area is listed in our service database.</p>
+
+            <div class="stats">
+                <div class="stat">
+                    <strong>Home</strong>
+                    <span>Internet</span>
+                </div>
+                <div class="stat">
+                    <strong>Business</strong>
+                    <span>Connectivity</span>
+                </div>
+                <div class="stat">
+                    <strong>Wi-Fi</strong>
+                    <span>Setup</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.coverage-result {
+    margin-top: 18px;
+    padding: 18px;
+    background: #0c1b30;
+    border: 1px solid #25405e;
+    border-radius: 12px;
+}
+
+.coverage-result[hidden] {
+    display: none;
+}
+
+.coverage-result h3 {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.coverage-result p {
+    color: #9aabc3;
+    margin: 0;
+}
+
+.coverage-result.available {
+    border-color: #20c779;
+}
+
+.coverage-result.available h3 {
+    color: #20c779;
+}
+
+.coverage-result.unavailable h3 {
+    color: #ff7373;
+}
+
+.coverage-result.unknown h3 {
+    color: #ffca28;
+}
+</style>
+
+<script>
+/*
+  TARINNET COVERAGE DATABASE
+
+  Replace the example neighborhoods with your
+  actual, verified TarinNet service areas.
+*/
+
+
+function normalizeLocation(value) {
+    return value
+        .trim()
+        .toLocaleLowerCase()
+        .replace(/\s+/g, " ");
+}
+
+const coverageForm = document.getElementById("coverageForm");
+const coverageInput = document.getElementById("coverageAddress");
+const coverageResult = document.getElementById("coverageResult");
+
+coverageForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const location = normalizeLocation(coverageInput.value);
+
+    if (!location) return;
+
+    let status = "unknown";
+    let title = "Coverage needs checking";
+    let message =
+        "We do not have confirmed coverage information for this location yet.";
+
+    const cities = Object.keys(COVERAGE_AREAS);
+
+    // Check whether the customer entered a city name.
+    if (Object.prototype.hasOwnProperty.call(
+        COVERAGE_AREAS, location
+    )) {
+        const neighborhoods = COVERAGE_AREAS[location]
+            .map(normalizeLocation)
+            .filter(function (area) {
+                return !area.startsWith("example ");
+            });
+
+        if (neighborhoods.length === 0) {
+            message =
+                "No verified neighborhoods have been added for " +
+                location + " yet.";
+        } else {
+            message = "Please enter your neighborhood or town name to check TarinNet coverage.";
+        }
+    } else {
+        // Match the entered location against verified neighborhoods.
+        let found = false;
+
+        for (const city of cities) {
+            const neighborhoods = COVERAGE_AREAS[city]
+                .map(normalizeLocation)
+                .filter(function (area) {
+                    return !area.startsWith("example ");
+                });
+
+            if (neighborhoods.includes(location)) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            status = "available";
+            title = "Great News! 🎉";
+            message = "Congratulations! TarinNet internet is available in your area.";
+        } else {
+            status = "unavailable";
+            title = "Sorry, Area Not Found";
+            message = "We couldn't confirm coverage in your area. Please contact TarinNet for more information.";
+        }
+    }
+
+    coverageResult.className = "coverage-result " + status;
+    coverageResult.replaceChildren();
+
+    const heading = document.createElement("h3");
+    heading.textContent = title;
+
+    const paragraph = document.createElement("p");
+    paragraph.textContent = message;
+
+    coverageResult.append(heading, paragraph);
+    coverageResult.hidden = false;
+});
+</script>
+<!-- END TARINNET COVERAGE CHECKER -->
+
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="container about-grid">
+        <div class="about-visual">
+            <div class="tower">🌐</div>
+            <h3>TarinNet Wireless ISP</h3>
+            <p>Your partner for wireless internet and network services.</p>
+        </div>
+
+        <div class="about-copy">
+            <div class="eyebrow">About us</div>
+            <h2>Connecting Homes and Businesses</h2>
+
+            <p>
+                TarinNet provides wireless internet service options
+                for customers looking to connect their homes,
+                businesses and devices.
+            </p>
+
+            <p>
+                Explore our available packages, request an installation,
+                check coverage or contact our team for assistance.
+            </p>
+
+            <ul>
+                <li>Wireless internet packages</li>
+                <li>Home and business connectivity</li>
+                <li>Antenna and router setup requests</li>
+                <li>Coverage and technical support inquiries</li>
+            </ul>
+
+            <a href="#contact" class="btn">Contact Our Team →</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <div class="section-heading">
+            <div class="eyebrow">Get in touch</div>
+            <h2>Let's Connect You</h2>
+            <p>
+                Send us your details to request an internet package,
+                installation, coverage check or technical support.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+
+                <p>
+                    📞 <strong>Phone:</strong><br>
+                    <a href="tel:+9647504270044">+964 750 427 0044</a>
+                </p>
+
+                <p>
+                    ✉️ <strong>Email:</strong><br>
+                    <a href="mailto:noc@tarinnet.info">noc@tarinnet.info</a>
+                </p>
+
+                <p>
+                    📍 <strong>Location:</strong><br>
+                    Duhok, Anwar Mayi Road
+                </p>
+
+                <p>
+                    🕒 <strong>Hours:</strong><br>
+                    9 AM – 11 PM
+                </p>
+
+                <p class="small-note">
+                    For availability, installation and pricing details,
+                    send our team a WhatsApp message.
+                </p>
+
+                <a class="btn" href="#plans">View Packages →</a>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="customerName">Full Name *</label>
+                        <input
+                            id="customerName"
+                            name="customerName"
+                            type="text"
+                            placeholder="Your full name"
+                            autocomplete="name"
+                            maxlength="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number *</label>
+                        <input
+                            id="customerPhone"
+                            name="customerPhone"
+                            type="tel"
+                            placeholder="+964 ..."
+                            autocomplete="tel"
+                            maxlength="30"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerArea">Your Area *</label>
+                    <select id="customerArea" name="customerArea" required>
+                        <option value="">Choose your location</option>
+                        <option value="Duhok">Duhok</option>
+                        <option value="Akre">Akre</option>
+                        <option value="Hewler">Hewler</option>
+                        <option value="Soran">Soran</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="selectedPlan">Package or Service *</label>
+                    <select id="selectedPlan" name="selectedPlan" required>
+                        <option value="">Choose a package or service</option>
+                        <option value="Normal - 20,000 IQD/month">
+                            Normal - 20,000 IQD/month
+                        </option>
+                        <option value="Family - 25,000 IQD/month">
+                            Family - 25,000 IQD/month
+                        </option>
+                        <option value="Premium - 28,000 IQD/month">
+                            Premium - 28,000 IQD/month
+                        </option>
+                        <option value="Super - 42,000 IQD/month">
+                            Super - 42,000 IQD/month
+                        </option>
+                        <option value="Coverage inquiry">
+                            Coverage inquiry
+                        </option>
+                        <option value="Technical support">
+                            Technical support
+                        </option>
+                        <option value="Installation">
+                            New installation
+                        </option>
+                        <option value="Package renewal">
+                            Package renewal
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerMessage">Message</label>
+                    <textarea
+                        id="customerMessage"
+                        name="customerMessage"
+                        placeholder="Tell us what you need..."
+                        maxlength="1500"
+                    ></textarea>
+                </div>
+
+                <button class="btn" type="submit">
+                    Send Request via WhatsApp →
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a class="logo" href="#home">
+                    <span class="logo-icon">◉</span>
+                    <span class="logo-name">
+                        Tarin<span>Net</span>
+                        <small>WIRELESS INTERNET</small>
+                    </span>
+                </a>
+
+                <p style="margin-top:15px">
+                    Wireless internet and network services for
+                    homes and businesses.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#plans">Packages</a>
+                <a href="#services">Services</a>
+                <a href="#coverage">Coverage</a>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact">Support</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>+964 750 427 0044</p>
+                <p>noc@tarinnet.info</p>
+                <p>Duhok, Kurdistan Region</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> TarinNet. All rights reserved.</p>
+            <p>Wireless Internet Services · Iraq</p>
+        </div>
+    </div>
+</footer>
+
+<a
+    class="whatsapp"
+    id="whatsappButton"
+    href="https://wa.me/9647504276305"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact TarinNet on WhatsApp"
+>
+    ☎ WhatsApp Us
+</a>
+
+<div class="notice" id="notice" role="status"
+     aria-live="polite"></div>
+
+<script>
+"use strict";
+
+/*
+  TARINNET CONFIGURATION
+  Replace this with your official WhatsApp number.
+  Use digits only: country code + phone number.
+*/
+const WHATSAPP_NUMBER = "9647504276305";
+
+const menuToggle = document.getElementById("menuToggle");
+const navigation = document.getElementById("navigation");
+const notice = document.getElementById("notice");
+const contactForm = document.getElementById("contactForm");
+const selectedPlan = document.getElementById("selectedPlan");
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+document.getElementById("whatsappButton").href =
+    "https://wa.me/" + WHATSAPP_NUMBER;
+
+/* Mobile navigation */
+menuToggle.addEventListener("click", function () {
+    const isOpen = navigation.classList.toggle("open");
+
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+navigation.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navigation.classList.remove("open");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
+
+/* User feedback */
+let noticeTimer;
+
+function showNotice(message) {
+    notice.textContent = message;
+    notice.style.display = "block";
+
+    clearTimeout(noticeTimer);
+
+    noticeTimer = setTimeout(function () {
+        notice.style.display = "none";
+    }, 4500);
+}
+
+/* Open WhatsApp with a prefilled message */
+function openWhatsApp(message) {
+    const url =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(message);
+
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    showNotice(
+        "WhatsApp opened or is opening. Review your message and press Send."
+    );
+}
+
+/* Package buttons */
+
+/* Package buttons — FIXED */
+function choosePlan(planName) {
+    const selectedPlan = document.getElementById("selectedPlan");
+    const contactSection = document.getElementById("contact");
+
+    if (!selectedPlan || !contactSection) {
+        alert("Sorry, the contact form could not be found.");
+        return;
+    }
+
+    const matchingOption = Array.from(selectedPlan.options).find(
+        function (option) {
+            return option.value.startsWith(planName + " -");
+        }
+    );
+
+    if (!matchingOption) {
+        alert("Package not found: " + planName);
+        return;
+    }
+
+    // Automatically select the requested package
+    selectedPlan.value = matchingOption.value;
+
+    // Scroll to the contact form
+    contactSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    // Focus the selected package field after scrolling
+    setTimeout(function () {
+        selectedPlan.focus({ preventScroll: true });
+    }, 600);
+}
+
+
+/* Coverage inquiry */
+const COVERAGE_AREAS = {
+    "duh": [
+        "Zaxu",
+        "Malta",
+		"Zawita",
+		"Amedi",
+		"Masike",
+		"Semele",
+		"Tanahi",
+		"Hawshke",
+		"Sarsinke",
+		"Batifa",
+		"Mserike",
+		"Grebase",
+		"duhok"
+    ],
+    "akr": [
+        "akre"
+    ],
+    "hew": [
+        "hewler",
+		"hawler"
+    ],
+    "sor": [
+        "soran"
+    ]
+};
+
+/* Contact and package request */
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) {
+        return;
+    }
+
+    const name = document.getElementById(
+        "customerName"
+    ).value.trim();
+
+    const phone = document.getElementById(
+        "customerPhone"
+    ).value.trim();
+
+    const area = document.getElementById(
+        "customerArea"
+    ).value;
+
+    const plan = selectedPlan.value;
+
+    const message = document.getElementById(
+        "customerMessage"
+    ).value.trim();
+
+    if (!name || !phone || !area || !plan) {
+        showNotice("Please complete all required fields.");
+        return;
+    }
+
+    const whatsappMessage =
+        "Hello TarinNet! I have a service request.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Area: " + area + "\n" +
+        "Package/service: " + plan + "\n" +
+        "Message: " + (message || "No additional message") +
+        "\n\nPlease contact me about availability and installation.";
+
+    openWhatsApp(whatsappMessage);
+});
+</script>
+
+</body>
+</html>
